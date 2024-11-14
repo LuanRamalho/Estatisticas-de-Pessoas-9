@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas de Preferência por Dispositivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estatísticas de Preferência por Dispositivos</h1>
+        <div class="input-section">
+            <label for="desktop">Pessoas que gostam de Desktop:</label>
+            <input type="number" id="desktop" class="input" />
+
+            <label for="notebook">Pessoas que gostam de Notebook:</label>
+            <input type="number" id="notebook" class="input" />
+
+            <label for="smartphone">Pessoas que gostam de Smartphone:</label>
+            <input type="number" id="smartphone" class="input" />
+
+            <label for="tablet">Pessoas que gostam de Tablet:</label>
+            <input type="number" id="tablet" class="input" />
+        </div>
+
+        <button onclick="calcular()">Calcular</button>
+
+        <div id="total">Total de Pessoas Pesquisadas: 0</div>
+
+        <div id="resultados">
+            <div class="resultado">
+                <span>Desktop:</span>
+                <div class="progress-bar-container">
+                    <div id="progress-desktop" class="progress-bar"></div>
+                    <span id="percent-desktop">0%</span>
+                </div>
+            </div>
+            <div class="resultado">
+                <span>Notebook:</span>
+                <div class="progress-bar-container">
+                    <div id="progress-notebook" class="progress-bar"></div>
+                    <span id="percent-notebook">0%</span>
+                </div>
+            </div>
+            <div class="resultado">
+                <span>Smartphone:</span>
+                <div class="progress-bar-container">
+                    <div id="progress-smartphone" class="progress-bar"></div>
+                    <span id="percent-smartphone">0%</span>
+                </div>
+            </div>
+            <div class="resultado">
+                <span>Tablet:</span>
+                <div class="progress-bar-container">
+                    <div id="progress-tablet" class="progress-bar"></div>
+                    <span id="percent-tablet">0%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
